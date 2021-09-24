@@ -1,0 +1,190 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    background-color: rgb(255, 255, 255);
+}
+
+a{
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+}
+
+a#logo{
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-left: 5%;
+    color: black;
+}
+
+
+nav.navbar{
+    margin-right: 5%;
+}
+
+li.nav-item{
+    font-size: large;
+    padding-right: 1rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+
+#prodaja{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left:0;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 23% 92%, 23% 92%, 0 74%);
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.5);
+}
+
+#prodaja img{
+    width:100%;
+    height: 80vh;
+    z-index: 0;
+    margin:auto;
+    object-fit: cover;
+}
+
+
+
+.prodaja-tekst{
+    position: absolute;
+    left: 35rem;
+    top: 17rem;
+}
+
+.prodaja-tekst h3{
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(10, 10, 10, 0.623);
+}
+
+
+#cards{
+    margin-top: 70vh;
+}
+
+.our-team {
+    padding: 30px 0 60px;
+    margin-bottom: 30px;
+    margin-left: 2rem;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid white;
+    border-radius: 8%;
+  }
+
+  .our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #9e9fa1;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+
+  .our-team:hover .picture::before {
+    height: 100%;
+  }
+
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4e5052;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+  }
+
+  .our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+  }
+
+  .our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #4e5052;
+    opacity: 0.5;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+
+  .our-team:hover .social {
+    margin: 2px 3px;
+    bottom: 0;
+  }
+
+  .our-team .social li {
+    display: inline-block;
+  }
+
+  .our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+
+  .our-team .social li a:hover {
+    color: black;
+    background-color: #f7f5ec;
+  }
+
+  #footer{
+    margin-top: 3rem;
+    text-align: center;
+    padding: 10px;
+    background-color: #4e5052;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+
+
+  }
